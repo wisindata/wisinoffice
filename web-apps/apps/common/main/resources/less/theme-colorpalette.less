@@ -1,0 +1,56 @@
+.theme-colorpalette {
+    margin: 0 !important;
+    //color: black;
+
+    em {
+        border: none;
+        display: block;
+
+        span{
+            height: 12px;
+            width: 12px;
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    a {
+        padding: 0;
+        border: @scaled-one-px-value-ie solid @background-normal-ie;
+        border: @scaled-one-px-value solid @background-normal;
+        float: left;
+        text-decoration: none;
+        -moz-outline: 0 none;
+        outline: 0 none;
+        cursor: pointer;
+
+        em span {
+            border: @scaled-one-px-value-ie solid @border-color-shading-ie;
+            border: @scaled-one-px-value solid @border-color-shading;
+        }
+
+        &:hover, &.selected {
+            border-color: @icon-normal-ie;
+            border-color: @icon-normal;
+            em span {
+                border-color: @background-normal-ie;
+                border-color: @background-normal;
+            }
+        }
+    }
+
+    .dynamic-empty-color em span {
+        border:solid @scaled-one-px-value-ie @border-color-shading-ie;
+        border:solid @scaled-one-px-value @border-color-shading;
+        background: @background-normal-ie;
+        background: @background-normal;
+    }
+
+    .color-transparent {
+        em span {
+            border:solid @scaled-one-px-value-ie @border-color-shading-ie;
+            border:solid @scaled-one-px-value @border-color-shading;
+        }
+    }
+}
+

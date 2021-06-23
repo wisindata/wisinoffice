@@ -1,0 +1,40 @@
+.table-styler {
+    background-color: @canvas-content-background;
+
+    table {
+        &.transparent {
+            background-color: @canvas-content-background !important;
+        }
+    }
+    td {
+        padding: 0;
+
+        &.content-box {
+            height: 50%;
+
+            .tablestyler-cell {
+                height: 100%;
+
+                .cell-content{
+                    height: 100%;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+
+    .tablestyler-cell .cell-content .content-text {
+        display: block;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAEAQMAAACeIXx6AAAABlBMVEVMaXHAwMBbbSKjAAAAAXRSTlMAQObYZgAAAA1JREFUeNpjOMDEAAIABVQAw/N8ALEAAAAASUVORK5CYII=') repeat 0 0 scroll;
+        background-size: 2px auto;
+        height: 100%;
+
+        .pixel-ratio__1_5 & {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGAQMAAAA8K7ZPAAAABlBMVEVMaXHAwMBbbSKjAAAAAXRSTlMAQObYZgAAAA5JREFUeNpjeMAAgmAAABesAqGy0C2BAAAAAElFTkSuQmCC');
+        }
+
+        .pixel-ratio__2 & {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAIAQMAAADk/cxGAAAABlBMVEVMaXHAwMBbbSKjAAAAAXRSTlMAQObYZgAAAA5JREFUeNpj+MAAgVAAAC0QA8HkpvUHAAAAAElFTkSuQmCC');
+        }
+    }
+}
